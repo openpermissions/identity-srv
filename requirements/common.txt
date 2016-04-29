@@ -1,0 +1,8 @@
+click==3.3
+requests==2.4.3
+six==1.9.0
+tornado==4.3
+voluptuous==0.8.8
+git+https://github.com/openpermissions/chub.git@1.0.4
+git+https://github.com/openpermissions/koi.git@1.0.6
+git+https://github.com/openpermissions/bass.git@1.0.3
