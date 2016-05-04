@@ -23,7 +23,7 @@ setup(
     version=version,
     description='Open Permissions Platform Coalition Identity Service',
     author='CDE Catapult',
-    author_email='support-copyrighthub@cde.catapult.org.uk',
+    author_email='support@openpermissions.org',
     url='https://github.com/openpermissions/identity-srv',
     packages=find_packages(exclude=['test']),
     entry_points={
