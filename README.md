@@ -1,7 +1,7 @@
 open-permissions-platform-identity-srv
 ======================================
 
-This repository contains the Open Permissions Platform Coalition Identity Service
+This repository contains the Open Permissions Platform Identity Service, which is responsible for generating hub keys.
 
 Running locally
 ===============
@@ -33,7 +33,7 @@ To have a "clean" target from build artifacts:
 make clean
 ```
 
-To run all unit tests and generate a HTML code coverage report along with a
+To run all unit tests and generate an HTML code coverage report along with a
 JUnit XML report in tests/unit/reports:
 
 ```
