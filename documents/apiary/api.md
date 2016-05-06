@@ -2,7 +2,7 @@ FORMAT: 1A
 HOST: https://id-stage.copyrighthub.org
 
 # Open Permissions Platform Identity Service
-The Identity Service is required to create unique Ids for
+The Identity Service is required to create unique IDs for
 * Asset
 * Offer
 * Agreement
@@ -24,9 +24,9 @@ The output should be of the form
 
 # Authorization
 
-This API requires authentication. Where [TOKEN] is indicated in an endpoint header you should supply an OAuth 2.0 access token with the appropriate scope (read, write or delegate). 
+This API requires authentication. Where [TOKEN] is indicated in an endpoint header you should supply an OAuth 2.0 access token with the appropriate scope (read, write or delegate).
 
-See [How to Auth](https://github.com/openpermissions/auth-srv/blob/master/documents/markdown/how-to-auth.md) 
+See [How to Auth](https://github.com/openpermissions/auth-srv/blob/master/documents/markdown/how-to-auth.md)
 for details of how to authenticate Hub services.
 
 # Group Identity
@@ -131,12 +131,12 @@ for details of how to authenticate Hub services.
 
 
 + Request Create one or more asset ids (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-            
+
     + Body
 
             {
@@ -161,12 +161,12 @@ for details of how to authenticate Hub services.
             }
 
 + Request Create asset ids with invalid data (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-            
+
     + Body
 
             {
@@ -208,7 +208,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-            
+
     + Body
 
             {}
@@ -262,12 +262,12 @@ for details of how to authenticate Hub services.
 
 
 + Request Create one or more offer ids (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
@@ -298,7 +298,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
@@ -340,11 +340,11 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {}
-            
+
 
 
 + Response 400 (application/json; charset=UTF-8)
@@ -396,12 +396,12 @@ for details of how to authenticate Hub services.
 
 
 + Request Create one or more agreement ids (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
@@ -432,7 +432,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
@@ -474,7 +474,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {}

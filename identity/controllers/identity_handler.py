@@ -7,8 +7,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-"""All Handler for ID related requests
-"""
+"""All Handler for ID related requests"""
 from tornado.escape import json_decode
 from koi.base import BaseHandler
 from koi import exceptions
@@ -18,8 +17,7 @@ from identity.models.identity import validate
 
 
 class IdentityHandler(BaseHandler):
-    """Super class for handling identity asset
-    """
+    """Super class for handling identity asset"""
 
     def post(self, entity_type):
         """Can return as many IDs as configured via max_id_generation_count
@@ -40,5 +38,5 @@ class IdentityHandler(BaseHandler):
                                      result['hub_id'],
                                      result['repository_id'],
                                      entity_type)
-                   for _ in range(result['count'])]
+                    for _ in range(result['count'])]
         self.finish({'status': 200, 'data': hub_keys})
