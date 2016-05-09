@@ -2,7 +2,7 @@ FORMAT: 1A
 HOST: https://id-stage.copyrighthub.org
 
 # Open Permissions Platform Identity Service
-The Identity Service is required to create unique Ids for
+The Identity Service is required to create unique IDs for
 * Asset
 * Offer
 * Agreement
@@ -24,9 +24,9 @@ The output should be of the form
 
 # Authorization
 
-This API requires authentication. Where [TOKEN] is indicated in an endpoint header you should supply an OAuth 2.0 access token with the appropriate scope (read, write or delegate). 
+This API requires authentication. Where [TOKEN] is indicated in an endpoint header you should supply an OAuth 2.0 access token with the appropriate scope (read, write or delegate).
 
-See [How to Auth](https://github.com/openpermissions/auth-srv/blob/master/documents/markdown/how-to-auth.md) 
+See [How to Auth](https://github.com/openpermissions/auth-srv/blob/master/documents/markdown/how-to-auth.md)
 for details of how to authenticate Hub services.
 
 # Group Identity
@@ -131,16 +131,16 @@ for details of how to authenticate Hub services.
 
 
 + Request Create one or more asset ids (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-            
+
     + Body
 
             {
-                "resolver_id": "https://copyrighthub.org",
+                "resolver_id": "https://openpermissions.org",
                 "hub_id": "hub1",
                 "repository_id": "10e4b9612337f237118e1678ec001fa6",
                 "count": 3
@@ -154,19 +154,19 @@ for details of how to authenticate Hub services.
             {
                 "status": 200,
                 "data": [
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/5d84d36d6eec446aae9c4435291eca8a",
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/749ac740da53480d81f8568240e93fb2",
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/d9a6b7fe4c0f4343945b13eb8e78fb74"
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/5d84d36d6eec446aae9c4435291eca8a",
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/749ac740da53480d81f8568240e93fb2",
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/asset/d9a6b7fe4c0f4343945b13eb8e78fb74"
                 ]
             }
 
 + Request Create asset ids with invalid data (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-            
+
     + Body
 
             {
@@ -208,7 +208,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-            
+
     + Body
 
             {}
@@ -262,16 +262,16 @@ for details of how to authenticate Hub services.
 
 
 + Request Create one or more offer ids (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
-                "resolver_id": "https://copyrighthub.org",
+                "resolver_id": "https://openpermissions.org",
                 "hub_id": "hub1",
                 "repository_id": "10e4b9612337f237118e1678ec001fa6",
                 "count": 3
@@ -285,9 +285,9 @@ for details of how to authenticate Hub services.
             {
                 "status": 200,
                 "data": [
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/offer/5d84d36d6eec446aae9c4435291eca8a",
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/offer/749ac740da53480d81f8568240e93fb2",
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/offer/d9a6b7fe4c0f4343945b13eb8e78fb74"
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/offer/5d84d36d6eec446aae9c4435291eca8a",
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/offer/749ac740da53480d81f8568240e93fb2",
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/offer/d9a6b7fe4c0f4343945b13eb8e78fb74"
                 ]
             }
 
@@ -298,7 +298,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
@@ -340,11 +340,11 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {}
-            
+
 
 
 + Response 400 (application/json; charset=UTF-8)
@@ -396,16 +396,16 @@ for details of how to authenticate Hub services.
 
 
 + Request Create one or more agreement ids (application/json)
-    
+
     + Headers
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
-                "resolver_id": "https://copyrighthub.org",
+                "resolver_id": "https://openpermissions.org",
                 "hub_id": "hub1",
                 "repository_id": "10e4b9612337f237118e1678ec001fa6",
                 "count": 3
@@ -419,9 +419,9 @@ for details of how to authenticate Hub services.
             {
                 "status": 200,
                 "data": [
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/agreement/5d84d36d6eec446aae9c4435291eca8a",
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/agreement/749ac740da53480d81f8568240e93fb2",
-                    "https://copyrighthub.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/agreement/d9a6b7fe4c0f4343945b13eb8e78fb74"
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/agreement/5d84d36d6eec446aae9c4435291eca8a",
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/agreement/749ac740da53480d81f8568240e93fb2",
+                    "https://openpermissions.org/s1/hub1/10e4b9612337f237118e1678ec001fa6/agreement/d9a6b7fe4c0f4343945b13eb8e78fb74"
                 ]
             }
 
@@ -432,7 +432,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {
@@ -474,7 +474,7 @@ for details of how to authenticate Hub services.
 
             Accept: application/json
             Authorization: Bearer [TOKEN]
-                
+
     + Body
 
             {}

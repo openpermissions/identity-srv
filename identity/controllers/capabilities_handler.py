@@ -12,7 +12,6 @@ operation.
 """
 
 from tornado.options import options
-from tornado.escape import json_encode
 from koi.base import BaseHandler
 
 
@@ -27,4 +26,4 @@ class CapabilitiesHandler(BaseHandler):
         generated in a single operation.
         """
         msg = {"max_id_generation_count": "{}".format(options.max_id_generation_count)}
-        self.finish({'status': 200, 'data' :msg})
+        self.finish({'status': 200, 'data': msg})
