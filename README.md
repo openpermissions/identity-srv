@@ -1,10 +1,19 @@
-open-permissions-platform-identity-srv
-======================================
+The Open Permissions Platform Identity Service
+==============================================
+
+Useful Links
+============
+* [Open Permissions Platform](http://openpermissions.org)
+* [Low level Design](https://github.com/openpermissions/identity-srv/blob/master/documents/markdown/low-level-design.md)
+* [API Documentation](https://github.com/openpermissions/identity-srv/blob/master/documents/apiary/api.md)
+
+Service Overview
+================
 
 This repository contains the Open Permissions Platform Identity Service, which is responsible for generating hub keys.
 
 Running locally
-===============
+---------------
 To run the service locally:
 
 ```
@@ -26,7 +35,7 @@ python identity/ -t [--test]
 ```
 
 Running tests and generating code coverage
-==========================================
+------------------------------------------
 To have a "clean" target from build artifacts:
 
 ```
