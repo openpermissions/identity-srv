@@ -18,7 +18,6 @@ def setup_module(module):
 
 def test_validate_passes_with_count():
     body = {"resolver_id": "https://r1234",
-            "hub_id": "h1234",
             "repository_id": "37cd1397e0814e989fa22da6b15fec60",
             "count": 2}
     result, errors = validate(body)
@@ -28,7 +27,6 @@ def test_validate_passes_with_count():
 
 def test_validate_passes_without_count():
     body = {"resolver_id": "https://r1234",
-            "hub_id": "h1234",
             "repository_id": "37cd1397e0814e989fa22da6b15fec60"}
     result, errors = validate(body)
     assert not errors
@@ -42,19 +40,15 @@ def test_validate_empty_data():
 
 @pytest.mark.parametrize("body", [
     {"resolver_id": "https://r1234",
-     "hub_id": "h1234",
      "repository_id": "37cd1397e0814e989fa22da6b15fec60",
      "count": 2000},
     {"resolver_id": "https://r1234",
-     "hub_id": "h1234",
      "repository_id": "37cd1397e0814e989fa22da6b15fec60",
      "illegal": "x"},
     {"resolver_id": "r1234",
-     "hub_id": "h1234",
      "repository_id": "37cd1397e0814e989fa22da6b15fec60",
      },
     {"resolver_id": "https://r1234",
-     "hub_id": "h1234",
      "repository_id": "xyz",
      }
 ])
