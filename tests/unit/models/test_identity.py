@@ -63,4 +63,4 @@ def test_multiple_invalid():
             "count": 2000,
             "illegal": "x"}
     result, errors = validate(body)
-    assert len(errors) == 5
+    assert len(errors) == 4
