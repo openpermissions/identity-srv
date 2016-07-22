@@ -26,7 +26,7 @@ def schema():
     returns a volupuous Schema object for validating
     """
     schema = {Required(part): _match_part(part) for part
-              in ['resolver_id', 'hub_id', 'repository_id']}
+              in ['resolver_id', 'repository_id']}
     schema[Optional('count', default=1)] = All(
         int, Range(min=1, max=options.max_id_generation_count))
     return Schema(schema, required=True)

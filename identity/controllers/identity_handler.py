@@ -9,6 +9,8 @@
 
 """All Handler for ID related requests"""
 from tornado.escape import json_decode
+from tornado.options import options
+
 from koi.base import BaseHandler
 from koi import exceptions
 from bass.hubkey import generate_hub_key
@@ -35,7 +37,7 @@ class IdentityHandler(BaseHandler):
             raise exceptions.HTTPError(400, errors)
 
         hub_keys = [generate_hub_key(result['resolver_id'],
-                                     result['hub_id'],
+                                     options.hub_id,
                                      result['repository_id'],
                                      entity_type)
                     for _ in range(result['count'])]

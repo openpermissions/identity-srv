@@ -119,7 +119,6 @@ for details of how to authenticate Hub services.
 | Property      | Description                                                                              | Type   | Mandatory |
 | :-------      | :----------                                                                              | :---   | :-------  |
 | resolver_id   | The name of the host that can resolve the hub key. Must be a valid hostname and protocol | string | yes       |
-| hub_id        | The id of the hub that is hosting the key                                                | string | yes       |
 | repository_id | ID of the repository that contains the entity                                            | string | yes       |
 | count         | Number of asset ids to create. Must be greater than 0. (Default: 1)                      | number | no        |
 
@@ -141,7 +140,6 @@ for details of how to authenticate Hub services.
 
             {
                 "resolver_id": "https://openpermissions.org",
-                "hub_id": "hub1",
                 "repository_id": "10e4b9612337f237118e1678ec001fa6",
                 "count": 3
             }
@@ -221,10 +219,6 @@ for details of how to authenticate Hub services.
                 "status": 400,
                 "errors": [
                     {
-                        "message": "Missing 'hub_id'",
-                        "source": "identity"
-                    },
-                    {
                         "message": "Missing 'repository_id'",
                         "source": "identity"
                     },
@@ -250,7 +244,6 @@ for details of how to authenticate Hub services.
 | Property      | Description                                                                              | Type   | Mandatory |
 | :-------      | :----------                                                                              | :---   | :-------  |
 | resolver_id   | The name of the host that can resolve the hub key. Must be a valid hostname and protocol | string | yes       |
-| hub_id        | The id of the hub that is hosting the key                                                | string | yes       |
 | repository_id | ID of the repository that contains the entity                                            | string | yes       |
 | count         | Number of asset ids to create. Must be greater than 0. (Default: 1)                      | number | no        |
 
@@ -272,7 +265,6 @@ for details of how to authenticate Hub services.
 
             {
                 "resolver_id": "https://openpermissions.org",
-                "hub_id": "hub1",
                 "repository_id": "10e4b9612337f237118e1678ec001fa6",
                 "count": 3
             }
@@ -355,10 +347,6 @@ for details of how to authenticate Hub services.
                 "status": 400,
                 "errors": [
                     {
-                        "message": "Missing 'hub_id'",
-                        "source": "identity"
-                    },
-                    {
                         "message": "Missing 'repository_id'",
                         "source": "identity"
                     },
@@ -384,7 +372,6 @@ for details of how to authenticate Hub services.
 | Property      | Description                                                                              | Type   | Mandatory |
 | :-------      | :----------                                                                              | :---   | :-------  |
 | resolver_id   | The name of the host that can resolve the hub key. Must be a valid hostname and protocol | string | yes       |
-| hub_id        | The id of the hub that is hosting the key                                                | string | yes       |
 | repository_id | ID of the repository that contains the entity                                            | string | yes       |
 | count         | Number of asset ids to create. Must be greater than 0. (Default: 1)                      | number | no        |
 
@@ -406,7 +393,6 @@ for details of how to authenticate Hub services.
 
             {
                 "resolver_id": "https://openpermissions.org",
-                "hub_id": "hub1",
                 "repository_id": "10e4b9612337f237118e1678ec001fa6",
                 "count": 3
             }
@@ -487,10 +473,6 @@ for details of how to authenticate Hub services.
             {
                 "status": 400,
                 "errors": [
-                    {
-                        "message": "Missing 'hub_id'",
-                        "source": "identity"
-                    },
                     {
                         "message": "Missing 'repository_id'",
                         "source": "identity"
